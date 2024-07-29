@@ -1,0 +1,214 @@
+Código HTML:
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-
+scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>LanguageTech</title>
+</head>
+<body>
+<div class="wrapper"></div>
+<main>
+<section class = "module parallax parallax-1">
+<h1>LanguageTech</h1>
+</section>
+<section class = "module content">
+<div class="container">
+<h1>Quem Somos</h1>
+<p> A LanguageTech é uma empresa criada em 2024 com foco em
+desenvolvimento de software voltado para escolas de idiomas. Com uma
+equipe de especialistas em tecnologia educacional, estamos comprometidos
+em fornecer ferramentas que facilitam a gestão escolar, melhoram a
+experiência de aprendizado e ajudam estudantes a alcançar seus
+objetivos.</p>
+</div>
+</section>
+<section class="module parallax parallax-2">
+<h1>Nossas Soluções</h1>
+</section>
+<section class = "module content">
+<div class="container">
+<p>Na LanguageTech, oferecemos uma gama completa de soluções de
+software projetadas especificamente para atender às necessidades das
+escolas de idiomas. Nossos produtos incluem: </p>
+<p><strong>Plataforma de Gestão Escolar:</strong> Simplifique a
+administração da sua escola com ferramentas para gerenciamento de
+matrículas, horários, pagamentos e relatórios.</p>
+<p><strong>Ambiente Virtual de Aprendizagem (AVA):</strong> Proporcione
+aos seus alunos uma experiência de aprendizado online interativa e
+personalizada, com acesso a materiais didáticos, exercícios, avaliações e
+feedback em tempo real.</p>
+<p><strong>Aplicativo Móvel para Estudantes:</strong> Facilite o acesso
+dos alunos aos recursos da escola, permitindo que eles estudem a qualquer
+hora e em qualquer lugar, com funcionalidades como aulas ao vivo,
+notificações e progresso de aprendizado.</p>
+</div>
+</section>
+<section class="module parallax parallax-3">
+<h1>Por Que Escolher a LanguageTech?</h1>
+</section>
+<section class = "module content">
+<div class="container">
+<p><strong>Inovação e Qualidade:</strong> Utilizamos as
+tecnologias mais recentes para desenvolver soluções robustas e intuitivas
+que atendem às demandas específicas das escolas de idiomas.</p>
+<p><strong>Foco no Usuário:</strong> Nossos produtos são
+projetados com foco nas necessidades dos administradores escolares,
+professores e alunos, proporcionando uma experiência de usuário
+excepcional.</p>
+<p><strong>Suporte Dedicado:</strong> Oferecemos suporte
+contínuo para garantir que sua escola maximize os benefícios de nossas
+soluções, com assistência técnica, treinamento e atualizações
+regulares.</p>
+<p><strong>Flexibilidade e Personalização:</strong>
+Entendemos que cada escola é única, por isso nossas soluções são
+altamente personalizáveis para se adaptar aos diferentes métodos de
+ensino e requisitos operacionais.</p>
+</div>
+</section>
+<section class="module parallax parallax-4">
+<h1>Nosso Compromisso</h1>
+<p></p>
+</section>
+<section class = "module content">
+<div class="container">
+<p>Na LanguageTech, estamos comprometidos em melhorar a
+educação de idiomas através da tecnologia. Trabalhamos continuamente para
+inovar e aprimorar nossos produtos, sempre com o objetivo de ajudar
+escolas e alunos a alcançarem o sucesso. Nossa visão é um mundo onde a
+aprendizagem de idiomas seja acessível e eficiente </p>
+</div>
+</section>
+<section class="module parallax parallax-3">
+<h1>Fale Conosco</h1>
+</section>
+<section class = "module content">
+<div class="container">
+<form onsubmit="enviarFormulario(event)">
+<label for="name">Nome:</label>
+<input type="text" id="name" name="name"
+required>
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email"
+required><br>
+<label for="phone">Telefone:</label><br>
+<input type="tel" id="phone" name="phone"
+pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="Formato: 11-99999-9999"
+required><br>
+<label for="subject">Assunto:</label><br>
+<input type="text" id="subject"
+name="subject"><br>
+<label for="address">Endereço:</label><br>
+<input type="text" id="address"
+name="address"><br>
+<label for="city">Cidade:</label><br>
+<input type="text" id="city" name="city"><br>
+<label for="zipcode">CEP:</label><br>
+<input type="text" id="zipcode" name="zipcode"
+pattern="[0-9]{5}-[0-9]{3}" placeholder="Formato: 12345-678"
+required><br>
+<label for="country">País:</label><br>
+<input type="text" id="country"
+name="country"><br>
+<label for="state">Estado:</label><br>
+<select id="state" name="state">
+<option value="AC">Acre</option>
+<option value="AL">Alagoas</option>
+<option value="AP">Amapá</option>
+<label for="message">Mensagem:</label><br>
+</select><br>
+<textarea id="message" name="message" rows="4"
+required></textarea><br>
+<button type="submit">Enviar</button>
+<button type="submit">Cancelar</button>
+</div>
+</section>
+</main>
+</body>
+</html>
+
+Código CSS
+body{
+margin:0;
+padding:0;
+color:#242424;
+font-family: sans-serif;
+word-wrap: break-word;
+overflow-wrap: break-word;
+}
+h1,h2,h3,h4,h5,h6{
+font-weight: 900;
+color: black;
+}
+.wrapper {
+width: 100%;
+margin: 0 auto;
+}
+main {
+display: block;
+background-color: white;
+}
+.container {
+width: 100%;
+max-width: 760px;
+margin: 0 auto;
+padding: 0 20px;
+}
+section.module p{
+margin-bottom: 40px;
+}
+section.module:last-child{
+margin-bottom: 0;
+}
+section.module h2{
+margin-bottom: 40px;
+font-size: 30px;
+}
+section.module.content{
+padding: 40px 0;
+background-color: #ece7d5;
+}
+section.module.parallax{
+display: flex;
+flex-direction:column;
+justify-content: center;
+height: 100vh;
+width: 100%;
+position: relative;
+overflow: hidden;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+section.module.parallax-1{
+background-image: url("https://images.unsplash.com/photo-1464823063530-
+08f10ed1a2dd?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&cro
+p=");
+}
+section.module.parallax-2{
+background-image: url("https://images.unsplash.com/photo-1473181488821-
+2d23949a045a?dpr=1&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tin
+ysrgb&crop=");
+}
+section.module.parallax-3{
+background-image: url("https://images.unsplash.com/photo-1472162314594-
+eca3c3d90df1?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&cr
+op=");
+}
+section.module.parallax-4{
+background-image: url("https://images.unsplash.com/photo-
+1464823063530-
+08f10ed1a2dd?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&cro
+p=");
+}
+section.module.parallax h1{
+color: black;
+text-align: center;
+font-size: 78px;
+}
+
+
+
